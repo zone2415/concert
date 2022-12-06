@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:concert.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="concert.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="concert">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <StackPanel>
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label FontWeight="Bold" FontStyle="15" Grid.Row="1" Grid.Column="1"></Label>
+            <TextBox Watermark="Артист" x:Name="SearchArtist" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="20,10,0,10"></TextBox>
+            <Button Content="Поиск" FontWeight="Bold" FontStyle="25" Margin="2,0,2,0" Grid.Column="2"></Button>
+            <Button Content="Меню"  Grid.Column="0" Margin="5,0,5,0"></Button>
+            <Menu Grid.Column="7" IsEnabled="False" Margin="15,0,0,0">
+                <MenuItem x:Name="MenuItem_One">
+                    <Button Content="дата"></Button>
+                </MenuItem>
+            </Menu>
+        </Grid>
+    </StackPanel>
+</Window>
