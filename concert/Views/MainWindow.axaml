@@ -31,10 +31,12 @@
             <Label FontWeight="Bold" FontStyle="15" Grid.Row="1" Grid.Column="1"></Label>
             <TextBox Watermark="Артист" x:Name="SearchArtist" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="20,10,0,10"></TextBox>
             <Button Content="Поиск" FontWeight="Bold" FontStyle="25" Margin="2,0,2,0" Grid.Column="2"></Button>
-            <Button Content="Меню"  Grid.Column="0" Margin="5,0,5,0"></Button>
-            <Menu Grid.Column="7" IsEnabled="False" Margin="15,0,0,0">
-                <MenuItem x:Name="MenuItem_One">
-                    <Button Content="дата"></Button>
+            <Button Content="Меню" Click="OpenMenu"  Grid.Column="0" Margin="5,0,5,0"></Button>
+            <Menu Grid.Column="0" IsEnabled="False" Margin="15,0,0,0">
+                <MenuItem x:Name="MenuItem_One" HorizontalAlignment="Stretch">
+                    <Button Content="Сортировка по дата" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                    <Button Content="Сортировка по городу" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                    <Button Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
                 </MenuItem>
             </Menu>
         </Grid>
