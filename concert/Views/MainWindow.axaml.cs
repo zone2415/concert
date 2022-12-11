@@ -14,4 +14,9 @@ public partial class MainWindow : Window
     {
         MenuItem_One.Open();
     }
+
+    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    {
+        SortDateOne.Open();
+    }
 }

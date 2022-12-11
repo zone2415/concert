@@ -5,6 +5,8 @@
       <map>
         <entry key="concert/App.axaml" value="concert/concert.csproj" />
         <entry key="concert/Views/MainWindow.axaml" value="concert/concert.csproj" />
+        <entry key="concert/Views/SortDate.axaml" value="concert/concert.csproj" />
+        <entry key="concert/WindowMenu/SortDate.axaml" value="concert/concert.csproj" />
       </map>
     </option>
   </component>

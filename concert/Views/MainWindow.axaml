@@ -39,9 +39,13 @@
                 <Button Content="Меню" Click="OpenMenu"  Grid.Column="0" Margin="5,0,5,0"></Button>
                 <Menu Grid.Column="0" IsEnabled="False" Margin="15,0,0,0">
                     <MenuItem x:Name="MenuItem_One" HorizontalAlignment="Stretch">
-                        <Button Content="Сортировка по дата" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                        <Button Content="Сортировка по дата" Click="Button_OnClick" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
                         <Button Content="Сортировка по городу" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
-                        <Button Content="" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                        <Button Content="Сортировка по " HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                    </MenuItem>
+                    <MenuItem x:Name="SortDateOne">
+                        <Button Content="defeifge"></Button>
+                        <TextBox Watermark="dddkdkejhf" Margin="20" ></TextBox>
                     </MenuItem>
                 </Menu>
             </Grid>
@@ -60,5 +64,6 @@
             </StackPanel>
         </ScrollViewer>
     </Grid>
+    
   
 </Window>
