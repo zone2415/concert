@@ -44,8 +44,21 @@
                         <Button Content="Сортировка по " HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
                     </MenuItem>
                     <MenuItem x:Name="SortDateOne">
-                        <Button Content="defeifge"></Button>
-                        <TextBox Watermark="dddkdkejhf" Margin="20" ></TextBox>
+                        <StackPanel>
+                            <Grid ShowGridLines="True">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="15"></RowDefinition>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </StackPanel>
                     </MenuItem>
                 </Menu>
             </Grid>
