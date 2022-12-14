@@ -19,4 +19,9 @@ public partial class MainWindow : Window
     {
         SortDateOne.Open();
     }
+
+    private void SortGorodOne(object? sender, RoutedEventArgs e)
+    {
+        SortGorod.Open();
+    }
 }

@@ -12,7 +12,7 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <Grid ShowGridLines="True">
+    <Grid ShowGridLines="False">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -40,12 +40,12 @@
                 <Menu Grid.Column="0" IsEnabled="False" Margin="15,0,0,0">
                     <MenuItem x:Name="MenuItem_One" HorizontalAlignment="Stretch">
                         <Button Content="Сортировка по дата" Click="Button_OnClick" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
-                        <Button Content="Сортировка по городу" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
+                        <Button Content="Сортировка по городу" Click="SortGorodOne"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
                         <Button Content="Сортировка по " HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"></Button>
                     </MenuItem>
                     <MenuItem x:Name="SortDateOne">
                         <StackPanel>
-                            <Grid ShowGridLines="True">
+                            <Grid ShowGridLines="False">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="50"></RowDefinition>
                                     <RowDefinition Height="50"></RowDefinition>
@@ -65,6 +65,26 @@
                             </Grid>
                         </StackPanel>
                     </MenuItem>
+                    <MenuItem x:Name="SortGorod">
+                        <StackPanel>
+                            <Grid ShowGridLines="False">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                    <RowDefinition Height="50"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="160"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">Сортировка по городу</TextBlock>
+                                <TextBox Grid.Column="0" Grid.Row="1" Watermark="Укажите город" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBox>
+                                <Button Grid.Column="2" Grid.Row="1" Content="Сортировать" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                    </MenuItem>
                 </Menu>
             </Grid>
         </StackPanel>
@@ -73,11 +93,13 @@
                 <Grid ShowGridLines="True">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
+                        
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="600"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
+                    <Button Grid.Column="0" Grid.Row="1"></Button>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
