@@ -92,14 +92,17 @@
             <StackPanel>
                 <Grid ShowGridLines="True">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
-                        
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
-                    <Button Grid.Column="0" Grid.Row="1"></Button>
+                    <Button HorizontalAlignment="Left" Height="150" Width="150" Grid.Column="0" Grid.Row="0">
+                        <Image Source="../Assets/111.jpeg"></Image>
+                    </Button>
+                    <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">MAROON</TextBlock>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
