@@ -12,9 +12,10 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
     
-    <Grid ShowGridLines="False">
+    <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0">
@@ -88,7 +89,18 @@
                 </Menu>
             </Grid>
         </StackPanel>
-        <ScrollViewer Grid.Row="1">
+        <StackPanel Grid.Row="1" Background="gray">
+            <Grid ShowGridLines="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </StackPanel>
+        <ScrollViewer Grid.Row="2">
             <StackPanel>
                 <Grid ShowGridLines="True">
                     <Grid.ColumnDefinitions>
@@ -102,7 +114,6 @@
                     <Button HorizontalAlignment="Left" Height="150" Width="150" Grid.Column="0" Grid.Row="0">
                         <Image Source="../Assets/111.jpeg"></Image>
                     </Button>
-                    <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top">MAROON</TextBlock>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
